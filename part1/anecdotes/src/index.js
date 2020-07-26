@@ -12,7 +12,6 @@ const anecdotes = [
 
 const App = (props) => {
   const [selected, setSelected] = useState(Math.floor(Math.random() * 6))
-
   const [points, setPoints] = useState(new Uint8Array(6))
   var [maxIndex, setMaxIndex] = useState("")
 
