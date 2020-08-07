@@ -7,7 +7,7 @@ const DeleteButton = (props) => {
     const deletePerson = () => {
 
         if (window.confirm(`Delete ${props.name}?`)) { 
-            const request = axios.delete(`http://localhost:3001/persons/${props.id}`)
+            const request = axios.delete(`http://localhost:3001/api/persons/${props.id}`)
             console.log(`deleted ${props.id}`)
             return request.then(response => response.data)
         }

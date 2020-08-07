@@ -6,9 +6,6 @@ import personService from './services/persons'
 import './index.css'
 import Notification from './components/Notification'
 
-
-// 2.20*: Phonebook step12
-
 const App = () => {
   const [ persons, setPersons ] = useState([]) 
   const [ notification, setNotification ] = useState(null);
